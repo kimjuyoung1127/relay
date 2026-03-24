@@ -73,3 +73,17 @@ This document records durable product and architecture decisions for `relay`.
 - rationale:
   - users want shell control without memorizing every slash command
   - keeping slash as the underlying control layer preserves precision, safety, and debuggability
+
+### 2026-03-25 — `relay` should use graph-guided scope narrowing for medium and cross-module changes
+
+- status: resolved
+- decision:
+  - use `rg` directly for tiny single-file work
+  - use `code-review-graph` first for medium, review-sized, or cross-module work in `relay`
+  - keep the repo-local working rule in `RELAY.md`
+  - keep the repo-local skill in `.codex/skills/relay-graph-ops`
+  - use `scripts/code_review_graph_report.sh` as the standard graph report command
+- rationale:
+  - `relay` changes often cross TUI, orchestration, persistence, prompts, adapters, and PTY session handling
+  - raw text search alone is often broader than needed because the repo is code-heavy and docs-heavy at the same time
+  - a graph-first pass makes it easier to identify the smallest relevant file set and the most relevant tests before editing

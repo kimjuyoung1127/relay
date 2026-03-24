@@ -1,0 +1,4 @@
+interface:
+  display_name: "Relay Graph Ops"
+  short_description: "Use code-review-graph for relay scope and tests"
+  default_prompt: "Use $relay-graph-ops to narrow the relevant relay files and tests before reviewing, refactoring, or changing cross-module code."

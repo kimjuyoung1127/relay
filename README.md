@@ -61,6 +61,8 @@ Current validation snapshot:
   - prioritized execution backlog
 - [docs/ref/ARCHITECTURE.md](/Users/family/jason/relay/docs/ref/ARCHITECTURE.md)
   - system structure and ownership boundaries
+- [docs/ref/CODE-REVIEW-GRAPH-TUNING.md](/Users/family/jason/relay/docs/ref/CODE-REVIEW-GRAPH-TUNING.md)
+  - graph-guided scope and test-tuning workflow for this repo
 - [docs/ref/DOCS-OPERATING-MODEL.md](/Users/family/jason/relay/docs/ref/DOCS-OPERATING-MODEL.md)
   - how to maintain docs over time
 
@@ -69,6 +71,7 @@ The older root docs remain useful long-form references:
 - [AUTH_SETUP.md](/Users/family/jason/relay/AUTH_SETUP.md)
 - [IMPLEMENTATION_HISTORY.md](/Users/family/jason/relay/IMPLEMENTATION_HISTORY.md)
 - [PRODUCTION_CHECKLIST.md](/Users/family/jason/relay/PRODUCTION_CHECKLIST.md)
+- [RELAY.md](/Users/family/jason/relay/RELAY.md)
 - [UX_SPEC.md](/Users/family/jason/relay/UX_SPEC.md)
 
 ## Quick start
@@ -244,9 +247,22 @@ Last trace:
 Automated suite:
 
 ```text
-Ran 70 tests
+Ran 86 tests
 OK
 ```
+
+Graph-guided workflow validation:
+
+- `code-review-graph build` and `update`: pass
+- `scripts/code_review_graph_report.sh`: pass
+- `relay.service` dependent scope resolves to:
+  - `src/relay/cli.py`
+  - `src/relay/tui.py`
+  - `tests/test_service.py`
+  - `tests/test_tui.py`
+- graph-selected targeted tests:
+  - `tests/test_service.py`: `19 tests`, `OK`
+  - `tests/test_tui.py`: `47 tests`, `OK`
 
 Notable manual validations:
 

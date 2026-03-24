@@ -55,7 +55,7 @@ This is the prioritized execution checklist for `relay`.
 - [ ] `/export`
 - [ ] `/web`
 - [ ] `!shell` behind approval mode
-- [ ] `RELAY.md` project instruction file
+- [x] `RELAY.md` project instruction file
 
 ## P2 — Documentation
 

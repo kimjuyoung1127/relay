@@ -33,6 +33,7 @@ Use these for documents that change frequently while the product is actively evo
 Use these for longer-lived reference material.
 
 - [ARCHITECTURE.md](/Users/family/jason/relay/docs/ref/ARCHITECTURE.md)
+- [CODE-REVIEW-GRAPH-TUNING.md](/Users/family/jason/relay/docs/ref/CODE-REVIEW-GRAPH-TUNING.md)
 - [DOCS-OPERATING-MODEL.md](/Users/family/jason/relay/docs/ref/DOCS-OPERATING-MODEL.md)
 
 Long-form root references still exist and remain valid:

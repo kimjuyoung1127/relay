@@ -1,0 +1,13 @@
+.venv/**
+__pycache__/**
+.pytest_cache/**
+.mypy_cache/**
+.git/**
+.code-review-graph/**
+build/**
+dist/**
+src/relay.egg-info/**
+docs/**
+*.md
+htmlcov/**
+.coverage

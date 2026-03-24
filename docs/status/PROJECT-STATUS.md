@@ -10,6 +10,7 @@
 - docs operating model split: done
 - natural-language command aliases: done
 - natural-language workflow management aliases: done
+- local graph-guided working rules: done
 
 ## Active Tracks
 
@@ -37,12 +38,22 @@
 - Gemini -> Codex(custom) -> Send Back validation: done
 - Gemini -> Codex(implement) compact-path validation: done
 - heavy Codex implement workflow tuning: done
+- repo-local graph report and tuning workflow: done
+- repo-local `relay-graph-ops` skill: done
 - vendor-specific live origin strategy: in progress
 
 ## Validation
 
-- automated tests: `70 tests`, pass
+- automated tests: `86 tests`, pass
 - test matrix defined: done
+- `code-review-graph build` and `update`: pass
+- graph report script baseline for `relay`: pass
+- `relay.service` graph-guided scope narrowing:
+  - dependents: `src/relay/cli.py`, `src/relay/tui.py`, `tests/test_service.py`, `tests/test_tui.py`
+  - pass
+- targeted graph-selected tests:
+  - `tests/test_service.py`: `19 tests`, pass
+  - `tests/test_tui.py`: `47 tests`, pass
 - `relay` default launch opens the TUI directly: pass
 - direct prompt without pinned workflow: pass
 - `2+2` shell check: pass
@@ -68,6 +79,7 @@
 - real Codex PTY-origin support is still unstable
 - workflow presets should avoid fragile heavy defaults where safer presets exist
 - docs in root and docs tree should stay synchronized until the new structure fully settles
+- local repo skills should be used consistently during medium and cross-module work
 
 ## Current User-Facing Model
 
