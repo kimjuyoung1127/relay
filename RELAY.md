@@ -51,7 +51,7 @@ If the graph looks stale or suspicious:
 ## Ignore Rules
 
 - Keep graph scope centered on `src/relay/**` and `tests/**`
-- Exclude caches, build output, egg-info, graph output, and docs through [.code-review-graphignore](/Users/family/jason/relay/.code-review-graphignore)
+- Exclude caches, build output, egg-info, graph output, and docs through [.code-review-graphignore](./.code-review-graphignore)
 - If docs or generated files start showing up in graph hotspots, tighten the ignore file
 - If nearby tests disappear from dependent sets, check whether the ignore file became too aggressive
 
@@ -67,7 +67,7 @@ PYTHONPATH=src ./.venv/bin/python -m unittest discover -s tests -v
 
 Current known-good result on 2026-03-25:
 
-- `Ran 86 tests`
+- `Ran 88 tests`
 - `OK`
 
 ## High-Value Test Targets
@@ -86,7 +86,7 @@ Current known-good result on 2026-03-25:
 
 ## Docs To Check When Needed
 
-- [docs/ref/ARCHITECTURE.md](/Users/family/jason/relay/docs/ref/ARCHITECTURE.md)
-- [docs/ref/CODE-REVIEW-GRAPH-TUNING.md](/Users/family/jason/relay/docs/ref/CODE-REVIEW-GRAPH-TUNING.md)
-- [docs/status/PROJECT-STATUS.md](/Users/family/jason/relay/docs/status/PROJECT-STATUS.md)
-- [docs/status/TEST-MATRIX.md](/Users/family/jason/relay/docs/status/TEST-MATRIX.md)
+- [docs/ref/ARCHITECTURE.md](./docs/ref/ARCHITECTURE.md)
+- [docs/ref/CODE-REVIEW-GRAPH-TUNING.md](./docs/ref/CODE-REVIEW-GRAPH-TUNING.md)
+- [docs/status/PROJECT-STATUS.md](./docs/status/PROJECT-STATUS.md)
+- [docs/status/TEST-MATRIX.md](./docs/status/TEST-MATRIX.md)

@@ -4,10 +4,10 @@ This is a detailed long-form UX reference.
 
 For the current operational view, start with:
 
-- [Docs Hub](/Users/family/jason/relay/docs/README.md)
-- [Project Status](/Users/family/jason/relay/docs/status/PROJECT-STATUS.md)
-- [Decision Log](/Users/family/jason/relay/docs/status/DECISION-LOG.md)
-- [Architecture](/Users/family/jason/relay/docs/ref/ARCHITECTURE.md)
+- [Docs Hub](./docs/README.md)
+- [Project Status](./docs/status/PROJECT-STATUS.md)
+- [Decision Log](./docs/status/DECISION-LOG.md)
+- [Architecture](./docs/ref/ARCHITECTURE.md)
 
 This document describes the intended production UX for `relay`, with improvements informed by current AI terminal products.
 

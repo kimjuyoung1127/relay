@@ -4,9 +4,9 @@ This is a focused auth reference.
 
 For the broader current-state and document map, see:
 
-- [Docs Hub](/Users/family/jason/relay/docs/README.md)
-- [Project Status](/Users/family/jason/relay/docs/status/PROJECT-STATUS.md)
-- [Architecture](/Users/family/jason/relay/docs/ref/ARCHITECTURE.md)
+- [Docs Hub](./docs/README.md)
+- [Project Status](./docs/status/PROJECT-STATUS.md)
+- [Architecture](./docs/ref/ARCHITECTURE.md)
 
 This file records the current authentication setup status for real Gemini and Qwen target testing.
 
@@ -21,7 +21,7 @@ This file records the current authentication setup status for real Gemini and Qw
 
 Current template file:
 
-- `/Users/family/.gemini/.env`
+- `~/.gemini/.env`
 
 Edit that file and uncomment one option.
 
@@ -54,15 +54,15 @@ Current note:
 
 Template files created:
 
-- `/Users/family/.qwen/settings.gemini-template.json`
-- `/Users/family/.qwen/settings.qwen-template.json`
+- `~/.qwen/settings.gemini-template.json`
+- `~/.qwen/settings.qwen-template.json`
 
 Recommended paths:
 
 1. If using Gemini as the provider inside Qwen:
 
 ```bash
-cp /Users/family/.qwen/settings.gemini-template.json /Users/family/.qwen/settings.json
+cp ~/.qwen/settings.gemini-template.json ~/.qwen/settings.json
 ```
 
 This expects `GEMINI_API_KEY` to be available in your shell or environment.
@@ -76,7 +76,7 @@ npx @qwen-code/qwen-code@latest auth qwen-oauth
 Or start from:
 
 ```bash
-cp /Users/family/.qwen/settings.qwen-template.json /Users/family/.qwen/settings.json
+cp ~/.qwen/settings.qwen-template.json ~/.qwen/settings.json
 ```
 
 Then complete auth interactively if needed.
@@ -106,7 +106,7 @@ The following real vendor checks have now succeeded:
 After auth changes or local credential expiration, rerun:
 
 ```bash
-cd /Users/family/jason/relay
+cd /path/to/relay
 . .venv/bin/activate
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```
@@ -124,7 +124,7 @@ Then re-run real relay smoke for the newly configured target.
 
 For day-to-day usage, this machine now has:
 
-- `/Users/family/.local/bin/rr`
+- `~/.local/bin/rr`
 - `alias rr="$HOME/.local/bin/rr"` in `~/.zshrc`
 
 So a fresh shell can launch relay with:

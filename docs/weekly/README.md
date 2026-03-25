@@ -1,13 +1,6 @@
-# relay Weekly Notes
+# [이전됨] relay Weekly Notes
 
-Use this folder for weekly rollups when several implementation threads need to be summarized together.
-
-Suggested filename format:
-
-- `YYYY-Www.md`
-
-Weekly notes should summarize:
-
-- what changed
-- what was validated
-- what remains risky
+> 이 폴더는 `docs/internal/weekly/`로 이전되었습니다.
+> 새 주간 롤업은 `docs/internal/weekly/YYYY-WNN.md` 형식으로 작성하세요.
+>
+> 참조: [docs/internal/weekly/CLAUDE.md](../internal/weekly/CLAUDE.md)

@@ -63,8 +63,9 @@ This is the prioritized execution checklist for `relay`.
 - [x] `docs/ref` split introduced
 - [x] test matrix document introduced
 - [ ] move or mirror more long-form root docs into `docs/ref`
-- [ ] add weekly operating summary template
-- [ ] add daily debugging note template
+- [x] add weekly operating summary template
+- [x] add daily debugging note template
+- [x] docs governance system (AGENTS.md, CLAUDE.md chain, automations)
 
 ## P3 — Hardening
 

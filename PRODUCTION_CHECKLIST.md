@@ -4,10 +4,10 @@ This is a detailed long-form checklist.
 
 For the current operational view, start with:
 
-- [Docs Hub](/Users/family/jason/relay/docs/README.md)
-- [Project Status](/Users/family/jason/relay/docs/status/PROJECT-STATUS.md)
-- [Execution Checklist](/Users/family/jason/relay/docs/status/EXECUTION-CHECKLIST.md)
-- [Architecture](/Users/family/jason/relay/docs/ref/ARCHITECTURE.md)
+- [Docs Hub](./docs/README.md)
+- [Project Status](./docs/status/PROJECT-STATUS.md)
+- [Execution Checklist](./docs/status/EXECUTION-CHECKLIST.md)
+- [Architecture](./docs/ref/ARCHITECTURE.md)
 
 This document defines the practical checklist for taking `relay` from a validated prototype to a production-ready terminal product.
 
@@ -134,7 +134,7 @@ Keep append-only execution events as a core feature.
 
 Required:
 
-- execution events written to `/Users/family/.relay/events.jsonl`
+- execution events written to `~/.relay/events.jsonl`
 - trace grouping by execution run
 - compact UI trace
 - raw provider output retained for diagnosis

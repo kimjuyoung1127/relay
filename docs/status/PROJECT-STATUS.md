@@ -44,7 +44,7 @@
 
 ## Validation
 
-- automated tests: `86 tests`, pass
+- automated tests: `88 tests`, pass
 - test matrix defined: done
 - `code-review-graph build` and `update`: pass
 - graph report script baseline for `relay`: pass

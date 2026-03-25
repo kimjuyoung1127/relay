@@ -4,9 +4,9 @@
 
 Related planning documents:
 
-- [Production Checklist](/Users/family/jason/relay/PRODUCTION_CHECKLIST.md)
-- [UX Specification](/Users/family/jason/relay/UX_SPEC.md)
-- [Docs Hub](/Users/family/jason/relay/docs/README.md)
+- [Production Checklist](./PRODUCTION_CHECKLIST.md)
+- [UX Specification](./UX_SPEC.md)
+- [Docs Hub](./docs/README.md)
 
 It supports:
 
@@ -45,39 +45,39 @@ Current validation snapshot:
 - `/rerun last` and `/resume last` are available for replay and recovery
 - `/trace last` can render the latest internal execution trace in the transcript body
 - workflow management now works through slash commands and English/Korean natural-language aliases
-- internal execution events are written to `/Users/family/.relay/events.jsonl`
+- internal execution events are written to `~/.relay/events.jsonl`
 
 ## Documentation layout
 
 `relay` now follows a `vibehub-media`-style document split:
 
-- [docs/README.md](/Users/family/jason/relay/docs/README.md)
+- [docs/README.md](./docs/README.md)
   - entrypoint and maintenance rules
-- [docs/status/PROJECT-STATUS.md](/Users/family/jason/relay/docs/status/PROJECT-STATUS.md)
+- [docs/status/PROJECT-STATUS.md](./docs/status/PROJECT-STATUS.md)
   - current phase, active tracks, validation snapshot
-- [docs/status/DECISION-LOG.md](/Users/family/jason/relay/docs/status/DECISION-LOG.md)
+- [docs/status/DECISION-LOG.md](./docs/status/DECISION-LOG.md)
   - durable product and architecture decisions
-- [docs/status/EXECUTION-CHECKLIST.md](/Users/family/jason/relay/docs/status/EXECUTION-CHECKLIST.md)
+- [docs/status/EXECUTION-CHECKLIST.md](./docs/status/EXECUTION-CHECKLIST.md)
   - prioritized execution backlog
-- [docs/ref/ARCHITECTURE.md](/Users/family/jason/relay/docs/ref/ARCHITECTURE.md)
+- [docs/ref/ARCHITECTURE.md](./docs/ref/ARCHITECTURE.md)
   - system structure and ownership boundaries
-- [docs/ref/CODE-REVIEW-GRAPH-TUNING.md](/Users/family/jason/relay/docs/ref/CODE-REVIEW-GRAPH-TUNING.md)
+- [docs/ref/CODE-REVIEW-GRAPH-TUNING.md](./docs/ref/CODE-REVIEW-GRAPH-TUNING.md)
   - graph-guided scope and test-tuning workflow for this repo
-- [docs/ref/DOCS-OPERATING-MODEL.md](/Users/family/jason/relay/docs/ref/DOCS-OPERATING-MODEL.md)
+- [docs/ref/DOCS-OPERATING-MODEL.md](./docs/ref/DOCS-OPERATING-MODEL.md)
   - how to maintain docs over time
 
 The older root docs remain useful long-form references:
 
-- [AUTH_SETUP.md](/Users/family/jason/relay/AUTH_SETUP.md)
-- [IMPLEMENTATION_HISTORY.md](/Users/family/jason/relay/IMPLEMENTATION_HISTORY.md)
-- [PRODUCTION_CHECKLIST.md](/Users/family/jason/relay/PRODUCTION_CHECKLIST.md)
-- [RELAY.md](/Users/family/jason/relay/RELAY.md)
-- [UX_SPEC.md](/Users/family/jason/relay/UX_SPEC.md)
+- [AUTH_SETUP.md](./AUTH_SETUP.md)
+- [IMPLEMENTATION_HISTORY.md](./IMPLEMENTATION_HISTORY.md)
+- [PRODUCTION_CHECKLIST.md](./PRODUCTION_CHECKLIST.md)
+- [RELAY.md](./RELAY.md)
+- [UX_SPEC.md](./UX_SPEC.md)
 
 ## Quick start
 
 ```bash
-cd /Users/family/jason/relay
+cd /path/to/relay
 python3 -m venv .venv
 . .venv/bin/activate
 pip install -e .
@@ -247,7 +247,7 @@ Last trace:
 Automated suite:
 
 ```text
-Ran 86 tests
+Ran 88 tests
 OK
 ```
 

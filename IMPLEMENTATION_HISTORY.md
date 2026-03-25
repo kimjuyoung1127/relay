@@ -4,10 +4,10 @@ This is the detailed implementation timeline and background record.
 
 For the fastest current-state view, start with:
 
-- [Docs Hub](/Users/family/jason/relay/docs/README.md)
-- [Project Status](/Users/family/jason/relay/docs/status/PROJECT-STATUS.md)
-- [Decision Log](/Users/family/jason/relay/docs/status/DECISION-LOG.md)
-- [Execution Checklist](/Users/family/jason/relay/docs/status/EXECUTION-CHECKLIST.md)
+- [Docs Hub](./docs/README.md)
+- [Project Status](./docs/status/PROJECT-STATUS.md)
+- [Decision Log](./docs/status/DECISION-LOG.md)
+- [Execution Checklist](./docs/status/EXECUTION-CHECKLIST.md)
 
 This document captures what has been built so far, how it was implemented, what was tested, and which real-world constraints were discovered during validation. It is intended to be a source document that can later be condensed into `README.md`.
 
@@ -375,7 +375,7 @@ This confirmed that the workflow engine, headless target execution, and return p
 
 To reduce launch friction:
 
-- a small wrapper script was added at `/Users/family/.local/bin/rr`
+- a small wrapper script was added at `~/.local/bin/rr`
 - `~/.zshrc` was updated with:
   - `alias rr="$HOME/.local/bin/rr"`
 
@@ -417,7 +417,7 @@ Fixes made:
   - closes stale active sessions when the backing socket is no longer live
   - marks stale queued/running runs as failed
 - append-only execution events are now written to:
-  - `/Users/family/.relay/events.jsonl`
+  - `~/.relay/events.jsonl`
 
 ### 20. Trace UX and build visibility
 
@@ -631,7 +631,7 @@ This confirmed that:
 Command used:
 
 ```bash
-cd /Users/family/jason/relay
+cd /path/to/relay
 . .venv/bin/activate
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```

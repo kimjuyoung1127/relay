@@ -7,7 +7,7 @@ The goal is to keep the graph focused on authored Python code and tests so revie
 
 ## Current Baseline
 
-Verified on 2026-03-25 after adding [.code-review-graphignore](/Users/family/jason/relay/.code-review-graphignore):
+Verified on 2026-03-25 after adding [.code-review-graphignore](./.code-review-graphignore):
 
 - `Languages: python`
 - `Files: 25`
@@ -132,7 +132,7 @@ Why it matters:
 1. Run `code-review-graph update`
 2. Run `scripts/code_review_graph_report.sh`
 3. Compare the hotspot tables and dependent sets to the healthy baselines above
-4. If noise appears, tighten [.code-review-graphignore](/Users/family/jason/relay/.code-review-graphignore)
+4. If noise appears, tighten [.code-review-graphignore](./.code-review-graphignore)
 5. If a valid source area disappears, loosen the ignore rules
 6. Re-run `code-review-graph build`
 7. Re-run `scripts/code_review_graph_report.sh`
@@ -154,7 +154,7 @@ scripts/code_review_graph_report.sh
 
 ## Notes About Tests
 
-The repository includes test files under [tests](/Users/family/jason/relay/tests), but `pytest` is not currently installed in the local `.venv`, so automated pytest execution was not available during this setup pass.
+The repository includes test files under [tests](./tests), but `pytest` is not currently installed in the local `.venv`, so automated pytest execution was not available during this setup pass.
 
 That does not block graph tuning.
 For this workflow, "tests" means:

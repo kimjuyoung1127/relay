@@ -8,22 +8,22 @@ from relay.adapters import build_live_command, check_agent_readiness
 
 class AdapterTests(unittest.TestCase):
     def test_claude_live_command_adds_skip_permissions_flag(self) -> None:
-        agent = {"kind": "claude", "launch_command": "/Users/family/.local/bin/claude"}
+        agent = {"kind": "claude", "launch_command": "/usr/local/bin/claude"}
         command = build_live_command(agent)
         self.assertEqual(command[-1], "--dangerously-skip-permissions")
 
     def test_claude_live_command_does_not_duplicate_skip_permissions_flag(self) -> None:
         agent = {
             "kind": "claude",
-            "launch_command": "/Users/family/.local/bin/claude --dangerously-skip-permissions",
+            "launch_command": "/usr/local/bin/claude --dangerously-skip-permissions",
         }
         command = build_live_command(agent)
         self.assertEqual(command.count("--dangerously-skip-permissions"), 1)
 
     def test_non_claude_live_command_is_unchanged(self) -> None:
-        agent = {"kind": "codex", "launch_command": "/Users/family/.local/bin/codex"}
+        agent = {"kind": "codex", "launch_command": "/usr/local/bin/codex"}
         command = build_live_command(agent)
-        self.assertEqual(command, ["/Users/family/.local/bin/codex"])
+        self.assertEqual(command, ["/usr/local/bin/codex"])
 
     def test_gemini_readiness_detects_missing_login(self) -> None:
         agent = {"kind": "gemini", "launch_command": "gemini"}

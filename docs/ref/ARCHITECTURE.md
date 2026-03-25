@@ -18,6 +18,18 @@
   - transport cleanup and output normalization helpers
 - `src/relay/workflow_store.py`
   - persisted workflow state, approval mode, and main provider
+- `src/relay/config.py`
+  - home directory resolution and path builders (`~/.relay`)
+- `src/relay/context.py`
+  - context snapshot capture from transcript, git state, and tree excerpt
+- `src/relay/models.py`
+  - enum definitions (AgentKind, TaskType, ApprovalMode, etc.)
+- `src/relay/schemas.py`
+  - task-type output schema definitions and preset configurations
+- `src/relay/ids.py`
+  - prefixed sequential ID generation
+- `src/relay/helper_agent.py`
+  - fake agent implementation for testing workflow paths
 
 ## Core Runtime Model
 
@@ -67,7 +79,7 @@ Stored in SQLite:
 
 Append-only event log:
 
-- `/Users/family/.relay/events.jsonl`
+- `~/.relay/events.jsonl`
 
 Used for:
 
